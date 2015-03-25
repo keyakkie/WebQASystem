@@ -11,20 +11,22 @@ mysql でしか検証していませんが，データベース関係の関数�
 1. ソース一式を Web サーバにコピーしてください．
 
 2. データベースとデータベースのユーザを作成します．
+
 ・データベースの管理者として include/create_db.sql の中身を実行してください．
 
 3. アンケートの質問項目を設定します．include/userinfo.inc の中身を適宜変更してください．
-・getUserInfoKey() の中の変数を変更すればアンケートフォームの項目を変更できます．
+
+### getUserInfoKey() の中の変数を変更すればアンケートフォームの項目を変更できます．
 $userinfo_key はアンケートフォームの項目を設定します．半角のみ使用可能です．現在の仕様では，区分は attribute，意見は opinion に固定しています．
 $userinfo_formcategory は，アンケートフォームの種類を指定します．"text"，"select"，"button"，"click" から選べます．attribute は select と対応させてください．
 $userinfo_caption は，各項目の Web ページ上での表記を設定します．全角でも大丈夫です．
 $userinfo_default は，デフォルトの値を選択したい場合に記載してください．
 
-・getAttributeKey() は区分を指定します．
+### getAttributeKey() は区分を指定します．
 $attribute_key は，区分の項目です．半角のみ仕様できます．
 $attribute_caption は，区分の Wb ページ上での表記です．全角も仕様可できます．
 
-・getOptionKey() は意見の選択肢を指定します．
+### getOptionKey() は意見の選択肢を指定します．
 $option_key は，意見の項目です．半角のみ仕様できます．
 $option_caption は，意見の Wb ページ上での表記です．全角も仕様可できます．
 
