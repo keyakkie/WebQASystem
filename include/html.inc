@@ -12,7 +12,6 @@ function getHeader($title) {
 		<!-- Bootstrap -->
 		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-select.css">
 		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script type="text/javascript" src="dist/js/jquery-1.10.1.min.js"></script>
 		<script type="text/javascript" src="dist/js/bootstrap-select.js"></script>
 		<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
